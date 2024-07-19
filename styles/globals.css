@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* styles/globals.css */
+.slick-dots li button:before {
+  font-size: 8px; /* Increase the size of the dots */
+  color: #000;    /* Change the color of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #293241; /* Change the color of the active dot */
+}
+
+
+.slick-slider .slick-slide {
+  margin-left: 15px;
+}
+
+.slick-slider .slick-list {
+  margin-left: -15px;
+}
+.slick-slider .slick-track {
+  display: flex;
+}
+
+@keyframes blobAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.animate-blob {
+  animation: blobAnimation 3s infinite ease-in-out; /* Adjust duration and timing function as needed */
+  background-color: rgba(255, 192, 203, 0.5); /* Pinkish color with transparency */
+}
